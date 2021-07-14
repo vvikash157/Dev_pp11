@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>DBname<input id="dbname" type="text"/></div>
+    <div>DBversion<input id="dbversion" type="text"></div>
+    <button id="opendb">open database</button>
+    <script>
+
+        let dbname=document.getElementById("dbname");
+        let dbversion=document.getElementById("dbversion");
+        let openButton=document.getElementById("opendb");
+        let db;
+        openButton.addEventListener("click",opendb)
+    </script>
+</body>
+</html>

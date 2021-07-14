@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.video-container {
+    height: 100vh;
+    width: 100vw;
+    background:lightgray;
+}
+#record{
+
+border: 6px solid #7B1FA2;
+
+border-radius: 50%;
+}
+#capture{
+
+border: 6px solid #7B1FA2;
+
+border-radius: 50%;
+
+}
+.controls{
+
+height: 400px;
+
+width: 140px;
+
+position: absolute;
+
+top: 30vh;
+
+right: 5vw;
+
+display: flex;
+
+flex-direction: column;
+
+z-index: 3;
+
+/* border: 1px solid lightblue; */
+
+justify-content: space-evenly;
+
+align-items: center;
+}
+video{
+
+height: 100%;
+
+width: 100%;
+}
+.inner-record{
+width: 80%;
+
+height: 80%;
+
+background-color: red;
+
+border-radius: 50%;
+}
+
+.inner-capture{
+
+width: 80%;
+
+height: 80%;
+
+background-color: white;
+
+border-radius: 50%;
+}
+.controls>div{
+    height: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: white; */
+    /* border: red; */
+}
+.animate-record{
+    animation-name: fadeInFadeOut;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.animate-capture{
+animation-name: fadeInFadeOut;
+    animation-duration: 1s;
+    animation: iteration count 1;
+}
+@keyframes fadeInFadeOut{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+} 
+.video-filters{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    z-index: 3;
+
+}
+.filter{
+    height: 14vh;
+    width: 7vw;
+    border: 1px solid white;
+    background-image: url("https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    background-blend-mode: soft-light ;
+}
+.filter-div{
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+.zoom{
+    flex-direction: column;
+   
+    /* height: 50%; */
+    /* width: 78px; */
+    
+}
+.zoom div{
+height: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+} 
+.zoomIn{
+
+}
+.zoomOut{
+
+}
+.fas{
+font-size: 2rem;
+color:#1B1464;
+}
+.gallery-btn{
+    background: black;
+    border-radius: 50%;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+}
